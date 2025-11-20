@@ -85,6 +85,7 @@
             width: 100%;
             min-height: 100vh;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            zoom: 1.1;
             
             /* Gris Ardoise solide, pas de dégradé, simple et efficace */
             background-color: #2F3640; 
@@ -104,7 +105,7 @@
         /* Section Hero */
         .hero {
             position: relative;
-            padding: 14rem 0rem 10rem 0rem;
+            padding: 18rem 0rem 10rem 0rem;
             min-height: 70vh;
             overflow: hidden;
         }
@@ -192,12 +193,12 @@
             background: white;
             color: #363F4F; /* <--- AJOUTE CETTE LIGNE (Gris foncé) */
             padding: 4rem 2rem;
-            margin: -4rem auto 7rem auto;
+            margin: -10rem auto 7rem auto;
             border-radius: 16px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             position: relative;
             z-index: 10;
-            max-width: 63vw;
+            max-width: 58vw;
         }
 
         .about:hover {
@@ -281,7 +282,7 @@
             padding: 2rem 2rem;
             margin: 7rem auto 7rem auto;
             border-radius: 16px;
-            max-width: 63vw;
+            max-width: 58vw;
         }
 
         .career:hover {
