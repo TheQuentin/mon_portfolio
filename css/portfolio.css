@@ -85,6 +85,7 @@
             width: 100%;
             min-height: 100vh;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            zoom: 1.1;
             
             /* Gris Ardoise solide, pas de dégradé, simple et efficace */
             background-color: #2F3640; 
@@ -197,7 +198,7 @@
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
             position: relative;
             z-index: 10;
-            max-width: 63vw;
+            max-width: 58vw;
         }
 
         .about:hover {
@@ -281,7 +282,7 @@
             padding: 2rem 2rem;
             margin: 7rem auto 7rem auto;
             border-radius: 16px;
-            max-width: 63vw;
+            max-width: 58vw;
         }
 
         .career:hover {
