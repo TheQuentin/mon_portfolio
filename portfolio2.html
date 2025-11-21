@@ -5,42 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio de Quentin Mirman - Étudiant en BUT Informatique et Développeur">
+    <meta name="keywords" content="portfolio, développeur, informatique, Quentin, Montpellier">
+    <meta name="author" content="Quentin Mirman">
     <title>Portfolio | Quentin Mirman</title>
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/portfolio2.css">
 </head>
 
 <body>
-
+    <!-- Navigation -->
     <nav>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Menu" aria-controls="main-nav">☰</button>
         <div class="nav-container">
+            <div class="nav-logo">QM</div>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#a-propos">À propos</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#futur">Futur</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="accueil" class="hero sticky-panel">
-        <video class="bg-video" id="bg-video" autoplay muted loop playsinline poster="img/image.png">
+    <!-- Section Hero -->
+    <section id="accueil" class="hero">
+        <!-- Background video (place `DJI_0111.MP4` in `src/img/`) -->
+        <video class="bg-video" id="bg-video" autoplay muted loop playsinline poster="../img/hero-poster.jpg">
             <source src="img/background2.mp4" type="video/mp4">
+            <!-- Fallback: poster image will show when video unsupported -->
         </video>
-        <div class="hero-content container">
+        <div class="hero-content container">            
             <h1>Je suis Quentin Mirman</h1>
             <p>Étudiant en BUT Informatique à Montpellier</p>
         </div>
-        <div class="scroll-indicator">↓</div>
     </section>
-
-    <section id="a-propos" class="about sticky-panel panel-white">
-        <div class="container center-vertical">
+    <!-- À Propos -->
+    <section id="a-propos" class="about">
+        <div class="container">
             <h2>01 - Un peu plus sur moi !</h2>
-
-            <div class="about-grid">
-                <div class="about-col">
+            <div class="about-content">
+                <!-- <div>
+                    <img src="" alt="Quentin Mirman - Photo de profil" class="profile-image">
+                </div> -->
+                <div class="about-text">
                     <h3>Qui suis-je ?</h3>
                     <p>En dehors de l'informatique, je suis passionné par la randonnée en montagne, qui me permet de me
                         dépasser et aussi de me déconnecter du monde numérique dans lequel je suis entouré au quotidien.
@@ -54,8 +60,7 @@
                         l'impression 3D et les drones, qui ouvrent selon moi des perspectives d'innovation majeure et
                         prometteuses dans un futur proche.</p>
                 </div>
-
-                <div class="about-col">
+                <div class="about-text">
                     <h3>Ma Passion pour l'Informatique</h3>
                     <p>L'informatique est un domaine qui me passionne depuis tout petit, une passion transmise par mon
                         père et mon grand-père. C'est pour acquérir de nouvelles compétences dans ce secteur que j'ai
@@ -63,7 +68,6 @@
                     <p>Par ailleurs, j'ai décidé cette année de choisir le parcours Intégration d'application et
                         management du système d'information afin d'orienter un peu plus mes études sur de la gestion de
                         projet !</p>
-
                     <div class="interests-list">
                         <h4>Mes intérêts actuels :</h4>
                         <ul>
@@ -74,179 +78,142 @@
                             <li>Entrepreneuriat technologique</li>
                         </ul>
                     </div>
-
                     <a href="#" class="cta-button cta-button-secondary">Télécharger mon CV</a>
                 </div>
             </div>
         </div>
     </section>
 
-   <section id="parcours" class="career sticky-panel panel-dark">
-        <div class="container center-vertical">
-            <h2 style="margin-bottom: 4rem;">02 Mon Parcours</h2>
+    <!-- À propos Alternance -->
+   <section id="a-propos" class="career">
+        <div class="container">
+            <h2>Mon Parcours</h2>
+            <p>
+                Par ailleurs, je suis très heureux d'avoir signé mon contrat d'alternance pour septembre 2025 chez
+                Airbus Hélicoptère, une entreprise qui incarne pleinement mes valeurs : passion, innovation et exigence.
+                C'est une opportunité en or pour mettre en pratique mes compétences acquises à l'IUT informatique de
+                Montpellier tout en évoluant dans un domaine qui me fait rêver depuis l'enfance. Hâte de commencer cette
+                belle aventure !
+            </p>
+            <p>
+                Comme vous le verrez plus tard, j'ai pour projet de continuer mes études après l'IUT au sein d'un master
+                ou d'une école d'ingénieur afin de me spécialiser davantage et relever des défis encore plus ambitieux !
+            </p>
         </div>
-    </section> 
-       <section id="parcours" class="career sticky-panel panel-darkTemporary">  
-            <div class="timeline">
-                 <div class="timeline-item right">
-                    <div class="timeline-date">2025 - 2026</div>
-                    <div class="timeline-content">
-                        <h3>Alternance Airbus Helicopters</h3>
-                        <h4>Marignane</h4>
-                        <p>Je suis très heureux d'avoir signé mon contrat d'alternance ! Une entreprise qui incarne mes valeurs : passion, innovation et exigence.</p>
-                        <p>C'est une opportunité en or pour mettre en pratique mes compétences tout en évoluant dans un domaine qui me fait rêver.</p>
-                    </div>
-                </div>  
-                <div class="timeline-item left">
-                    <div class="timeline-date">2025</div>
-                    <div class="timeline-content">
-                        <h3>Stage Horiba</h3>
-                        <h4>Montpellier</h4>
-                        <p>Mise à jour d'un logiciel de test spectrophotomètre. Analyse des besoins, développement et qualification.</p>
-                    </div>
-                </div>
-                 <div class="timeline-item right">
-                    <div class="timeline-date">2023 - 2026</div>
-                    <div class="timeline-content">
-                        <h3>BUT Informatique</h3>
-                        <h4>Montpellier</h4>
-                        <p>Acquisition de compétences dans de nombreux langages (Java, C, PHP...) et mise en pratique dans des projets concrets.</p>
-                    </div>
-                </div>   
-                <div class="timeline-item left">
-                    <div class="timeline-date">2020 - 2023</div>
-                    <div class="timeline-content">
-                        <h3>BAC Spécialité Math / NSI</h3>
-                        <h4>Lycée Jean Jaurès</h4>
-                        <p>Découverte du langage Python, SQL et HTML/CSS. Spécialité Physique-Chimie en première en plus des maths et NSI.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </section>
 
-    <section id="futur" class="about sticky-panel panel-grey">
-        <div class="container center-vertical">
-            <h2 style="margin-bottom: 4rem;">03 Mon futur</h2>
-            <p>Je suis très enthousiaste à l'idée de rejoindre Airbus Helicopters en alternance à partir de 2025. Travailler dans une entreprise aussi prestigieuse représente pour moi une opportunité exceptionnelle de développer mes compétences techniques et professionnelles dans un environnement stimulant et innovant.</p>
-            <p>Je suis convaincu que cette expérience me permettra de contribuer activement aux projets passionnants de l'entreprise tout en continuant à apprendre et à grandir en tant que professionnel.</p>
-        </div>
-    </section> 
-
-    <section id="projets" class="projects sticky-panel panel-grid">
-        <div class="container center-vertical">
-            <h2>04 - Mes Projets</h2>
+    <!-- Projets -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2>02 - Mes Projets</h2>
             <p class="projects-subtitle">Découvrez mes derniers projets innovants</p>
 
             <div class="projects-carousel">
                 <div class="projects-viewport">
                     <div class="projects-track">
                         <div class="project-card">
+                            <img src="" alt="Projet Web" class="project-image">
                             <div class="project-content">
                                 <h3>Application Web</h3>
-                                <p>Développement d'une application web innovante utilisant les dernières technologies
-                                    (React, JS).</p>
+                                <p>Développement d'une application web innovante utilisant les dernières technologies du web. Apprentissage des bonnes pratiques de développement et collaboration en équipe.</p>
+                                <small style="color: #999;">Technologies : HTML, CSS, JavaScript, React</small>
                             </div>
                         </div>
+
                         <div class="project-card">
+                            <img src="" alt="Gestion de Projet" class="project-image">
                             <div class="project-content">
                                 <h3>Gestion de Projet</h3>
-                                <p>Gestion de projet complexe avec suivi des jalons. Architecture MVC, Python et Base de
-                                    données.</p>
+                                <p>Gestion de projet informatique complexe avec suivi des jalons et des ressources. Mise en place d'une architecture système robuste et performante.</p>
+                                <small style="color: #999;">Technologies : Python, Base de données, Architecture MVC</small>
                             </div>
                         </div>
+
                         <div class="project-card">
+                            <img src="" alt="SAÉ Entreprise" class="project-image">
                             <div class="project-content">
-                                <h3>SAÉ Airbus</h3>
-                                <p>Apprentissage pratique en situation réelle d'entreprise. Développement de compétences
-                                    techniques.</p>
+                                <h3>SAÉ - Apprentissage Pratique</h3>
+                                <p>SAÉ - Apprentissage pratique en situation réelle d'entreprise. Développement de compétences techniques et comportementales essentielles.</p>
+                                <small style="color: #999;">Technologies : Multiples, selon les exigences du projet</small>
                             </div>
                         </div>
+
                         <div class="project-card">
+                            <img src="" alt="SAÉ Airbus" class="project-image">
                             <div class="project-content">
                                 <h3>SAÉ Airbus</h3>
-                                <p>Apprentissage pratique en situation réelle d'entreprise. Développement de compétences
-                                    techniques.</p>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-content">
-                                <h3>SAÉ Airbus</h3>
-                                <p>Apprentissage pratique en situation réelle d'entreprise. Développement de compétences
-                                    techniques.</p>
+                                <p>SAÉ - Apprentissage pratique en situation réelle d'entreprise. Développement de compétences techniques et comportementales essentielles.</p>
+                                <small style="color: #999;">Technologies : Multiples, selon les exigences du projet</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="projects-nav-container">
-                    <button class="projects-nav prev">&lt;</button>
-                    <button class="projects-nav next">&gt;</button>
+                <!-- Navigation manuelle sous le carousel -->
+                <div class="projects-nav-container" aria-hidden="false">
+                    <button class="projects-nav prev" aria-label="Précédent">&lt;</button>
+                    <button class="projects-nav next" aria-label="Suivant">&gt;</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact sticky-panel panel-black">
-        <div class="container center-vertical">
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
             <h2>Me contacter</h2>
-            <p>Vous avez un projet ou une question ? N'hésitez pas !</p>
+            <p>Vous avez un projet, une question ou une opportunité ? N'hésitez pas à me contacter !</p>
+            <div class="contact-links">
+                <a href="https://www.instagram.com/quentiin.mir/" class="contact-link" target="_blank">Instagram</a>
+                <a href="mailto:quentin.mirman@gmail.com" class="contact-link">Email</a>
+                <a href="https://www.linkedin.com/in/quentin-mirman-03455922b/" class="contact-link" target="_blank">LinkedIn</a>
+                <a href="https://github.com/TheQuentin" class="contact-link" target="_blank">GitHub</a>
 
-            <div class="contact-grid">
-                <a href="mailto:quentin@example.com" class="contact-card">
-                    <i class="fas fa-envelope"></i> Email
-                </a>
-                <a href="https://linkedin.com" class="contact-card">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com" class="contact-card">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
             </div>
-
-            <footer>
-                <p>&copy; 2025 Quentin Mirman. Tous droits réservés.</p>
-                <p>Portfolio développé sans dépendance à Wix.</p>
-            </footer>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Quentin Mirman. Tous droits réservés.</p>
+        <p>&copy; Photo et Vidéo par Quentin Mirman. Tous droits réservés.</p>
+    </footer>
     <script>
-        // Sécurisation : n'initialise l'IntersectionObserver que si l'élément trigger existe
-        (function () {
-            var parcours = document.querySelector('.panel-dark');
-            var trigger = document.getElementById('trigger-parcours-end');
-            if (trigger && parcours) {
-                try {
-                    var observer = new IntersectionObserver(function (entries) {
-                        entries.forEach(function (entry) {
-                            if (entry.isIntersecting) {
-                                parcours.classList.add('sticky-end');
-                            }
-                            else {
-                                parcours.classList.remove('sticky-end');
-                            }
-                        });
-                    }, { root: null, threshold: 0 });
-                    observer.observe(trigger);
-                }
-                catch (err) {
-                    console.warn('IntersectionObserver non initialisé :', err);
-                }
-            }
-        })();
-
-        // Navigation toggle (sécurisé si .nav-toggle absent)
-        (function () {
+        (function(){
             var nav = document.querySelector('nav');
             var toggle = document.querySelector('.nav-toggle');
-            if (toggle && nav) {
-                toggle.addEventListener('click', function () {
-                    var isOpen = nav.classList.toggle('open');
-                    toggle.setAttribute('aria-expanded', isOpen);
+            if(!nav || !toggle) return;
+            toggle.addEventListener('click', function(e){
+                var isOpen = nav.classList.toggle('open');
+                toggle.setAttribute('aria-expanded', isOpen);
+            });
+            // fermer au clic à l'extérieur
+            document.addEventListener('click', function(e){
+                if(!nav.classList.contains('open')) return;
+                if(!nav.contains(e.target) && !toggle.contains(e.target)){
+                    nav.classList.remove('open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+            // fermer sur touche Echap
+            document.addEventListener('keydown', function(e){
+                if(e.key === 'Escape' && nav.classList.contains('open')){
+                    nav.classList.remove('open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+            // when a nav link is clicked, close (mobile)
+            nav.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    if(nav.classList.contains('open')){
+                        nav.classList.remove('open');
+                        toggle.setAttribute('aria-expanded', 'false');
+                    }
                 });
-            }
+            });
         })();
-
-        (function(){
+    </script>
+        <script>
+            (function(){
                 var track = document.querySelector('.projects-track');
                 if(!track) return;
                 var visible = 3;
@@ -335,7 +302,7 @@
                 if(prevBtn) prevBtn.addEventListener('click', goPrev);
                 if(nextBtn) nextBtn.addEventListener('click', goNext);
             })();
-    </script>
+        </script>
 </body>
 
 </html>
